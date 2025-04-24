@@ -37,11 +37,11 @@ This will:
 
 ## Arguments
 
-- `--batch-size`: Batch size for training (default: 128)
-- `--epochs`: Number of epochs to train (default: 200)
-- `--num-workers`: Number of workers for data loading (default: 2)
-- `--temperature`: Temperature parameter for knowledge distillation (default: 4.0)
-- `--alpha`: Weight for soft targets in knowledge distillation loss (default: 0.1)
+- `--batch-size`: Batch size for training 
+- `--epochs`: Number of epochs to train 
+- `--num-workers`: Number of workers for data loading 
+- `--temperature`: Temperature parameter for knowledge distillation 
+- `--alpha`: Weight for soft targets in knowledge distillation loss 
 - `--train-teacher`: Flag to train the teacher network
 
 ## Implementation Notes
