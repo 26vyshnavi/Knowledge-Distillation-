@@ -60,7 +60,7 @@ testloader = get_cifar10_loaders(batch_size=128)
 def predict(model, image):
     with torch.no_grad():
         output = model(image)
-        _, predicted = torch.max(output.data, 1)
+        predicted = torch.max(output.data, 1)
         return predicted
 
 # Example batch inference
@@ -71,7 +71,7 @@ def evaluate_model(model, testloader):
         for images, labels in testloader:
             images, labels = images.to(device), labels.to(device)
             outputs = model(images)
-            _, predicted = torch.max(outputs.data, 1)
+            predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
     return 100 * correct / total
