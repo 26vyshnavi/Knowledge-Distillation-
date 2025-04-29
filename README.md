@@ -54,7 +54,7 @@ student_base.load_state_dict(torch.load('best_student_base.pth'))
 student_base.eval()
 
 # Get data loader
-_, testloader = get_cifar10_loaders(batch_size=128)
+testloader = get_cifar10_loaders(batch_size=128)
 
 # Example inference
 def predict(model, image):
